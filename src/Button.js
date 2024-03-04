@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import className from 'classnames'
 
 function Button({
   children,
