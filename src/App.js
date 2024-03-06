@@ -1,22 +1,36 @@
 import Button from "./Button";
 
 function App() {
+  const handleClick = () => {
+    console.log("button was clicked");
+  };
+  const handleMouse = () => {
+    console.log("hover took place");
+  };
   return (
     <div>
       <div>
-        <Button>Help</Button>
+        <Button primary rounded onClick={handleClick} className="mb-5">
+          Help
+        </Button>
       </div>
       <div>
-        <Button>Hello</Button>
+        <Button secondary rounded onMouseEnter={handleMouse} className="mb-7">
+          Hello
+        </Button>
       </div>
       <div>
-        <Button>Click here</Button>
+        <Button warning outline rounded>
+          Click here
+        </Button>
       </div>
       <div>
-        <Button>hey</Button>
+        <Button danger>hey</Button>
       </div>
       <div>
-        <Button>musibat</Button>
+        <Button success outline>
+          musibat
+        </Button>
       </div>
     </div>
   );
