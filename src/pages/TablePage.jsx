@@ -24,7 +24,7 @@ function TablePage() {
   ];
 
   const keyFn = (fruit) => {
-    return fruit.name;
+    return fruit.name;   //for key values
   };
 
   return (
