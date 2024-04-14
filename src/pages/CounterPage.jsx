@@ -8,7 +8,7 @@ const SET_VALUE_TO_ADD = "change_value_to_add";
 const DECREMENT_COUNT = "decrement";
 const ADD_VALUE_TO_COUNT = "add_value_to_count";
 
-const reducer = (state, action) => {
+const reducer = (state, action) => {    //action is defined by the dispatch argument below
   switch (action.type) {
     case INCREMENT_COUNT:
       state.count = state.count + 1;
@@ -39,7 +39,7 @@ function CounterPage({ initialCount }) {
 
   const increment = () => {
     dispatch({
-      type: INCREMENT_COUNT,
+      type: INCREMENT_COUNT,  //dispatch used to gain access to action arguement
     });
   };
   const decrement = () => {
